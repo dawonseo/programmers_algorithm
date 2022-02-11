@@ -14,4 +14,4 @@ def solution(numbers, target):
         n += 1
         lim += 2**n
 
-    return s_list[-2**len(numbers):].count(target)
+    return s_list[-(2**len(numbers)):].count(target)
