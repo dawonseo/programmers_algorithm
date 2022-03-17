@@ -13,7 +13,7 @@ def solution(N, number):
     for i in range(1, 8):
         for j in range(i):
             for a in li[j]:
-                for b in li[i - j - 1]: # 5개의 N으로 이루어질 수 있는 경우의 수는 1+4, 2+3, 3+2, 4+1
+                for b in li[i - j - 1]: # ex) 5개의 N으로 이루어질 수 있는 경우의 수는 1+4, 2+3, 3+2, 4+1
                     li[i].add(a + b)     
                     li[i].add(a - b)
                     li[i].add(a * b)
