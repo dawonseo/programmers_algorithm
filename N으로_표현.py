@@ -20,7 +20,7 @@ def solution(N, number):
                     if b != 0:  
                         li[i].add(a // b)  # b가 0일 경우는 나누기를 진행하지 않는다
 
-        if number in li[i]:              # number가 li[i]에 있을 경우, index+1을 반환
+        if number in li[i]:  # number가 li[i]에 있을 경우, index+1을 반환
             return i + 1
 
     return ans
